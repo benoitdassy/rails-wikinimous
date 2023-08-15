@@ -1,0 +1,13 @@
+<div>
+  <h1>All articles</h1>
+  <ul class="list-group w-auto">
+  <% @articles.each do |article| %>
+    <%= link_to (article_path(article)), class: 'text-decoration-none' do%>
+      <li class="list-group-item">
+      <h2><%= article.title %></h2>
+      <p><%= article.content %></p>
+      </li>
+    <% end %>
+  <% end %>
+  </ul>
+</div>

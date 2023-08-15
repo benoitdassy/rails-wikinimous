@@ -1,0 +1,7 @@
+<%= form_with model: @article, class:"m-2" do |t| %>
+  <%= t.label :title, class:"form-label"%>
+  <%= t.text_field :title, class:"form-control" %>
+  <%= t.label :content, class:"form-label" %>
+  <%= t.text_area :content, class:"form-control" %>
+  <%= t.submit "Create/Update", class:"btn btn-primary mt-2" %>
+<% end %>
